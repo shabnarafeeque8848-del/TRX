@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: whitelist-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: TOKEN
+        sync: false
